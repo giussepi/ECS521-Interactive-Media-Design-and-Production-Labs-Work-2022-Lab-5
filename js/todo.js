@@ -1,25 +1,25 @@
 window.addEventListener('load', function() {
 
-    var width = window.innerWidth;
-    var height = window.innerHeight - 25;
+    let width = window.innerWidth;
+    let height = window.innerHeight - 25;
 
     // first we need Konva core things: stage and layer
-    var stage = new Konva.Stage({
+    let stage = new Konva.Stage({
         container: 'container',
         width: width,
         height: height
     });
 
-    var layer = new Konva.Layer();
+    let layer = new Konva.Layer();
     stage.add(layer);
 
-    var isPaint = false;
-    var mode = 'brush';
-    var lastLine;
+    let isPaint = false;
+    let mode = 'brush';
+    let lastLine;
 
     stage.on('mousedown touchstart', function(e) {
         isPaint = true;
-        var pos = stage.getPointerPosition();
+        let pos = stage.getPointerPosition();
 
         lastLine = new Konva.Line({
             stroke: '#ab3e6d',
@@ -45,11 +45,11 @@ window.addEventListener('load', function() {
         e.evt.preventDefault();
 
         const pos = stage.getPointerPosition();
-        var newPoints = lastLine.points().concat([pos.x, pos.y]);
+        let newPoints = lastLine.points().concat([pos.x, pos.y]);
         lastLine.points(newPoints);
     });
 
-    var select = document.getElementById('tool');
+    let select = document.getElementById('tool');
 
     select.addEventListener('change', function() {
         mode = this.value;
