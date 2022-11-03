@@ -189,7 +189,7 @@ Answer each question in the sections indicated by comments. If you need to modif
 2. Add an option to clear the whole canvas at once. **All shapes must be cleared from memory**.
 
 ## Submission Instructions:
-### Deadline: 04/11/21 17:00
+### Deadline: 04/11/22 17:00
 The Submission Link is available under ASSESMENT INFORMATION/RESOURCES Section of Module Page.
 ### General Instruction:
 - Assignments must be submitted in a .zip package or alike ( .7z .bdoc .cdoc .ddoc .gtar .tgz .gz .gzip .hqx .rar .sit .tar .zip). Code submitted in other formats will not be accepted. Corrupt or otherwise unreadable files will not be accepted.
