@@ -49,9 +49,9 @@ window.addEventListener('load', function() {
         lastLine.points(newPoints);
     });
 
-    let select = document.getElementById('tool');
+    let tool_select = document.getElementById('tool');
 
-    select.addEventListener('change', function() {
+    tool_select.addEventListener('change', function() {
         mode = this.value;
     });
 
