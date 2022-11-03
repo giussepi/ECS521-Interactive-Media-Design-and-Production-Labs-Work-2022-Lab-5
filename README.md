@@ -186,7 +186,7 @@ Answer each question in the sections indicated by comments. If you need to modif
 <img src="imgs/todo.gif" />
 
 1. Add options to change and use at least 3 different brush colour.
-2. Add an option to clear the whole canvas at once.
+2. Add an option to clear the whole canvas at once. **All shapes must be cleared from memory**.
 
 ## Submission Instructions:
 ### Deadline: 04/11/21 17:00
