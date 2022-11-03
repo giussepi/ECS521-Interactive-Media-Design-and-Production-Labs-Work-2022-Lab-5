@@ -60,7 +60,7 @@ This exercise was taken from [HTML5 Canvas Shape Events](https://konvajs.org/doc
 1. Open `html/B.html` in browser (chrome/firefox/ie).
 2. Open `js/B.js` in text editor.
 
-### Draw a triangle as follows;
+### Draw a triangle as follows:
 1. Add following triangle drawing function.
    ```js
    var triangle = new Konva.RegularPolygon({
@@ -134,17 +134,7 @@ This exercise was taken from [HTML5 Canvas Shape Events](https://konvajs.org/doc
 This exercise was taken from [HTML5 Canvas Drag and Drop an Image](https://konvajs.org/docs/drag_and_drop/Drag_an_Image.html).
 1. Open `html/C.html` in browser (chrome/firefox/ie).
 2. Open `js/C.js` in text editor.
-3. Load the image as follows;
-   ```js
-   var imageObj = new Image();
-
-   imageObj.onload = function() {
-	   drawImage(this);
-   };
-
-   imageObj.src = '../imgs/Bulbasour.png';
-   ```
-4. Add the `Konva.Image` in the centre of the stage and make it draggable.
+3. Add the `Konva.Image` in the centre of the stage and make it draggable.
    ```js
    var pokemonImg = new Konva.Image({
        image: imageObj,
@@ -155,7 +145,7 @@ This exercise was taken from [HTML5 Canvas Drag and Drop an Image](https://konva
        draggable: true
    });
    ```
-5. Change the cursor style.
+4. Change the cursor style.
    ```js
    pokemonImg.on('mouseover', function() {
        document.body.style.cursor = 'pointer';
@@ -165,13 +155,23 @@ This exercise was taken from [HTML5 Canvas Drag and Drop an Image](https://konva
        document.body.style.cursor = 'default';
    });
    ```
-6. Add the KonvaImage to the layer.
+5. Add the KonvaImage to the layer.
    ```js
    layer.add(pokemonImg);
    ```
-7. Add the layer to the stage.
+6. Add the layer to the stage.
    ```js
    stage.add(layer);
+   ```
+6. Load the image as follows;
+   ```js
+   var imageObj = new Image();
+
+   imageObj.onload = function() {
+	   drawImage(this);
+   };
+
+   imageObj.src = '../imgs/Bulbasour.png';
    ```
 
 ## F. Free Drawing
