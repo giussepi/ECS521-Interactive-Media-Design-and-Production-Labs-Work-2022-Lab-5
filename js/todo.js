@@ -55,6 +55,22 @@ window.addEventListener('load', function() {
         mode = this.value;
     });
 
+    let btn_inspiration = document.getElementById('inspiration-btn');
+    let img_inspiration = document.getElementById('flying-bulldog');
+    let stage_visibility = true;
+
+    btn_inspiration.addEventListener('click', function(e){
+	img_inspiration.classList.toggle("hide");
+	if (stage_visibility){
+	    stage.hide();
+	    this.value = 'Enough inspiration';
+	} else {
+	    stage.show();
+	    this.value = 'More inspiration';
+	}
+	stage_visibility = !stage_visibility;
+    });
+
     ///////////////////////////////////////////////////////////////////////////
     //                      TODO 1: Add your code below                      //
     ///////////////////////////////////////////////////////////////////////////
@@ -64,7 +80,6 @@ window.addEventListener('load', function() {
     ///////////////////////////////////////////////////////////////////////////
     //                      TODO 2: Add your code below                      //
     ///////////////////////////////////////////////////////////////////////////
-
 
 
 
